@@ -1,0 +1,42 @@
+	<div id="head">
+    	<div>
+    		<div>
+    			<p>Bonjour <?php echo ucwords($SESSION['nomAdmin']); ?></p>
+    			<p><a href="admin/logout" id="logout">Logout</a></p>
+    		</div>
+    	
+    
+    		<nav>
+    			<dl>
+    				<a href="admin/article/">
+    					<dt>Articles</dt>
+    					<dd></dd>
+    				</a>
+    			</dl>
+    			<dl>
+    				<a href="admin/order">
+    					<dt>Commandes</dt>
+    					<dd></dd>
+    				</a>
+    			</dl>
+    			<dl>
+    				<a href="admin/category">
+    					<dt>Catégories</dt>
+    					<dd></dd>
+    				</a>
+    			</dl>
+    			<dl>
+    				<a href="admin/params">
+    					<dt>Paramètres</dt>
+    					<dd></dd>
+    				</a>
+    			</dl>
+    		</nav>
+    
+    		<div>
+                <form method="get" action="admin/article/search">
+        			<input type="text" name="q" id="q"><input type="submit" value="" class="recherche"></input>
+                </form>
+    		</div>
+    	</div>
+    </div>
